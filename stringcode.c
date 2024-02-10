@@ -57,19 +57,18 @@ char *starts_with(const char *haystack, const char *needle)
 
 /**
  * _strcat - concatenate two strings
- * @dest: the first string
+ * @des: the first string
  * @src: the second string
- *
  * Return: pointer to the first string
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *des, char *src)
 {
-	char *ret = dest;
+	char *ret = des;
 
-	while (*dest)
-		dest++;
+	while (*des)
+		des++;
 	while (*src)
-		*dest++ = *src++;
-	*dest = *src;
+		*des++ = *src++;
+	*des = *src;
 	return (ret);
 }
